@@ -12,7 +12,7 @@ import { CartStackNavigator, AccountStackNavigator, MainStackNavigator, OrderSta
 import AuthenticationModal from "../components/AuthenticationModal";
 
 import HomeScreen from '../screens/HomeScreen'; // Import your HomeScreen component
-
+import AccountScreen from '../screens/AccountScreen'; 
 
 const Drawer = createDrawerNavigator();
 const Tab = createBottomTabNavigator();
@@ -56,7 +56,7 @@ const DrawerNavigator = () => {
         <Drawer.Navigator initialRouteName="Home" drawerContent={CustomDrawerContent}>
             <Drawer.Screen name="Smart E-comm" component={TabNavigator} />
             <Drawer.Screen name="HomeScreen" component={HomeScreen} />
-        
+            <Drawer.Screen name="Account" component={AccountScreen} />
         </Drawer.Navigator>
     );
 };
