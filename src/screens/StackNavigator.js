@@ -22,7 +22,7 @@ const MainStackNavigator = () => {
                 headerShown: false
             }}
         >
-          <Stack.Screen name='homescreen' component={HomeScreen} />
+            <Stack.Screen name='homescreen' component={HomeScreen} />
             <Stack.Screen name='accountscreen' component={AccountScreen} />
             <Stack.Screen name='detailscreen' component={DetailScreen} />
             <Stack.Screen name='orderscreen' component={DetailScreen} />
